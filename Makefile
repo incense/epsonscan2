@@ -18,7 +18,7 @@ artifacts:
 
 epsonscan2:
 ifeq ("$(wildcard $(FILE))", "")
-	wget https://support.epson.net/linux/src/scanner/epsonscan2/${FILE}
+	wget --user-agent="Mozilla" https://support.epson.net/linux/src/scanner/epsonscan2/${FILE}
 endif
 	mkdir -p epsonscan2
 	tar -xzf ${FILE} --strip-components=1 -C epsonscan2
