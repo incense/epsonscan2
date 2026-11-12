@@ -40,3 +40,24 @@ To use the latter, one requires a config that is not too easy to get right (e.g.
 I ended up using the UI version to create a config as the UI checks the scanner's capabilities and shows you what you can configure.
 
 I also found that the linux version of epsonscan2 is not as powerfull on my scanner as the MacOS counterpart, e.g., that is better at cropping a picture and e.g., allows to remove punch holes. The latter is even a setting but is not functional for me.
+
+## Building
+
+Preparation:
+~~~
+make clean
+make prepare
+sudo make install-deps
+~~~
+
+Then
+`make all` builds headless and full package (graphical)
+`make docker-all` creates docker-headless and docker-full
+
+You could as well just do one of
+~~~
+make headless
+make full
+make docker-headless
+make docker-full
+~~~
