@@ -1,0 +1,10 @@
+--- a/thirdparty/zlib/gzread.c    2026-11-12 18:10:03.561661055 +0100
++++ b/thirdparty/zlib/gzread.c    2026-11-12 18:05:20.461305175 +0100
+@@ -4,6 +4,7 @@
+  */
+
+ #include "gzguts.h"
++#include <unistd.h>
+
+ /* Local functions */
+ local int gz_load OF((gz_statep, unsigned char *, unsigned, unsigned *));
