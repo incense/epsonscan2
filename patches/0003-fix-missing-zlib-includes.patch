@@ -22,3 +22,14 @@
   #  define LSEEK _lseeki64
 =======
 >>>>>>> 094428678ab8973c0e1a5df96d011824de51a58b
+
+--- a/thirdparty/zlib/gzwrite.c     2023-03-09 07:47:10.000000000 +0100
++++ a/thirdparty/zlib/gzwrite.c     2026-11-12 18:45:22.242892877 +0100
+@@ -4,6 +4,7 @@
+  */
+
+ #include "gzguts.h"
++#include <unistd.h>
+
+ /* Local functions */
+ local int gz_init OF((gz_statep));
