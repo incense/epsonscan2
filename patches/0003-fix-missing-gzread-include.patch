@@ -1,0 +1,21 @@
+--- a/thirdparty/zlib/gzread.c    2026-11-12 18:10:03.561661055 +0100
++++ b/thirdparty/zlib/gzread.c    2026-11-12 18:05:20.461305175 +0100
+@@ -4,6 +4,7 @@
+  */
+
+ #include "gzguts.h"
++#include <unistd.h>
+
+ /* Local functions */
+ local int gz_load OF((gz_statep, unsigned char *, unsigned, unsigned *));
+
+ --- a/thirdparty/zlib/gzlib.c     2023-03-09 07:47:10.000000000 +0100
+ +++ a/thirdparty/zlib/gzlib.c     2026-11-12 18:45:22.242892877 +0100
+ @@ -4,6 +4,7 @@
+   */
+ 
+  #include "gzguts.h"
+ +#include <unistd.h>
+ 
+  #if defined(_WIN32) && !defined(__BORLANDC__) && !defined(__MINGW32__)
+  #  define LSEEK _lseeki64
