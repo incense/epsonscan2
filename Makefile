@@ -11,9 +11,6 @@ PACKAGEVERSION_PATCH=0-${VERSION}
 clean:
 	rm -rf epsonscan2/
 	rm -rf artifacts/
-	# adding '-' before rm, as FILE might not exist (e.g. first run, or running make clean two times in a row)
-	# '-' for ignoring errors in recipes
-	# see https://www.gnu.org/software/make/manual/make.html#Errors
 	-rm ${FILE}
 
 artifacts:
