@@ -2,8 +2,11 @@ MAINTAINER="Jan Rüth"
 CONTACT="epsonscan2@djiehmail.com"
 
 # VERSION=6.7.43.0-1
-VERSION=6.7.93.0-1
+VERSION=6.7.80.0-1
+#VERSION=6.7.93.0-1
 FILE=epsonscan2-${VERSION}.src.tar.gz
+
+# https://download3.ebz.epson.net/dsc/f/03/00/17/08/06/1babf9876ebb16956420a601b92ee28b57cd7db7/epsonscan2-6.7.80.0-1.src.tar.gz
 URL=https://download3.ebz.epson.net/dsc/f/03/00/17/08/06/1babf9876ebb16956420a601b92ee28b57cd7db7
 
 PACKAGEVERSION_MAJOR=0
@@ -19,8 +22,6 @@ clean:
 
 artifacts:
 	mkdir -p artifacts
-
-https://download3.ebz.epson.net/dsc/f/03/00/17/08/06/1babf9876ebb16956420a601b92ee28b57cd7db7/epsonscan2-6.7.80.0-1.src.tar.gz
 
 epsonscan2:
 ifeq ("$(wildcard $(FILE))", "")
