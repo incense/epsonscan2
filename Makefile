@@ -1,8 +1,8 @@
 MAINTAINER="Jan Rüth"
 CONTACT="epsonscan2@djiehmail.com"
 
-VERSION[0]=6.7.43.0-1
-VERSION[1]=6.7.93.0-1
+VERSION[0]="6.7.43.0-1"
+VERSION[1]="6.7.93.0-1"
 
 SET_VERION=1
 
