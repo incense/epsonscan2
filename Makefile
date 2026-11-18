@@ -25,7 +25,7 @@ https://download3.ebz.epson.net/dsc/f/03/00/17/08/06/1babf9876ebb16956420a601b92
 epsonscan2:
 ifeq ("$(wildcard $(FILE))", "")
 	# wget --user-agent="Mozilla" https://support.epson.net/linux/src/scanner/epsonscan2/${FILE}
-	wget --user-agent="Mozilla" URL/${FILE}
+	wget --user-agent="Mozilla" ${URL}/${FILE}
 endif
 	mkdir -p epsonscan2
 	tar -xzf ${FILE} --strip-components=1 -C epsonscan2
