@@ -2,12 +2,14 @@ MAINTAINER="Jan Rüth"
 CONTACT="epsonscan2@djiehmail.com"
 
 # VERSION=6.7.43.0-1
-VERSION=6.7.80.0-1
-#VERSION=6.7.93.0-1
+# VERSION=6.7.80.0-1
+VERSION=6.7.94.0-1
 FILE=epsonscan2-${VERSION}.src.tar.gz
 
 # https://download3.ebz.epson.net/dsc/f/03/00/17/08/06/1babf9876ebb16956420a601b92ee28b57cd7db7/epsonscan2-6.7.80.0-1.src.tar.gz
 URL=https://download3.ebz.epson.net/dsc/f/03/00/17/08/06/1babf9876ebb16956420a601b92ee28b57cd7db7
+# https://download-center.epson.com/f/module/96f8e77b-7574-48df-908e-ee841f9e3ba1/epsonscan2-6.7.94.0-1.src.tar.gz
+https://download-center.epson.com/f/module/96f8e77b-7574-48df-908e-ee841f9e3ba1
 
 PACKAGEVERSION_MAJOR=0
 PACKAGEVERSION_MINOR=1

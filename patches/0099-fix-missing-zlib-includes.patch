@@ -30,3 +30,4 @@
 
  /* Local functions */
  local int gz_init OF((gz_statep));
+ 
